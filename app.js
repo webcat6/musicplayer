@@ -98,7 +98,19 @@
 		};
 
 		$scope.focusInput = false;
+
+        $scope.updatePlayList = function(){
+            API.changePlaylistDetails($scope.activePlaylist.username, $scope.activePlaylist.id, {name: $scope.activePlaylist.name})
+                .then(function() {
+                    $('#myModal').modal('hide');
+                    /*playlist.name = newName;
+                    playlist.editing = false;
+                    $scope.focusInput = false;*/
+                });
+        }
+
 		$scope.menuOptions = function(playlist) {
+            console.log(playlist);
 
 			var visibilityEntry = [playlist.public ? 'Make secret' : 'Make public', function ($itemScope) {
 				API.changePlaylistDetails(playlist.username, playlist.id, {public: !playlist.public})
@@ -118,7 +130,10 @@
 				}]
 				];
 			} else {
-				return [ visibilityEntry ];
+				return [ visibilityEntry, ['Edit Details', function ($itemScope) {
+                    $scope.activePlaylist = playlist;
+                    $('#myModal').modal('show');
+                }] ];
 			}
 		};
 
