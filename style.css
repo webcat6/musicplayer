@@ -77,15 +77,23 @@ hr {
 }
 
 .topgroup {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	height: 40px;
-	width: 100%;
-	background-color: #222326;
-	border-bottom: 1px solid #393b40;
-	box-sizing: border-box;
-	overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 4%;
+    width: 100%;
+    background-color: #222326;
+    border-bottom: 1px solid #393b40;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+ul{
+list-style-type: none;
+}
+.topgroup img{
+    width: 1381px;
+    margin-top: 2%;
+    margin-left: 77px;
 }
 
 .topgroup .searchbox {
@@ -288,7 +296,7 @@ hr {
 	bottom: 0px;
 	padding: 20px;
 	overflow: auto;
-	color: #88898c;
+background-color: black;
 }
 
 .mainview a {
@@ -341,9 +349,9 @@ a.button {
 }
 
 a.button.green {
-	background-color: #070;
-	color: #fff;
-	border: 1px solid #070;
+    background-color: #053797;
+    color: #fff;
+    border: 1px solid #306eff;
 }
 
 a.button.big.green {
@@ -357,7 +365,7 @@ a.button.big.green {
 
 a.button.button-add {
 	color: #fff;
-	border: 1px solid #070;
+    border: 1px solid #306eff;
 }
 
 .pop-meter {
@@ -524,12 +532,12 @@ ul.albums, ul.playlists, ul.genres {
 }
 
 ul.albums li, ul.playlists li, ul.genres li {
-	float: left;
-	position: relative;
-	width: 160px;
-	height: 220px;
-	margin: 0 10px 10px 0;
-	background-color: #393b40;
+    float: left;
+    position: relative;
+    width: 160px;
+    height: 220px;
+    margin: 0 10px 10px 0;
+    background-color: #6c6f77;
 }
 
 ul.albums li responsive-cover,  ul.playlists li responsive-cover, ul.genres li img {

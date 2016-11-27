@@ -1,7 +1,7 @@
 <header>
 	<playlist-cover ng-model="data" width="200"></playlist-cover>
 	<h4 ng-show="data.collaborative">COLLABORATIVE PLAYLIST</h4>
-	<h4 ng-hide="data.collaborative">PLAYLIST</h4>
+	<h4 ng-hide="data.collaborative">TOP TEN PLAYLIST</h4>
 	<h1>{{data.name}}</h1>
 	<p ng-bind-html="playlistDescription"></p>
 	<div class="follower-count">{{data.followers.total | number}} followers</div>

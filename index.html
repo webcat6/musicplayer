@@ -1,6 +1,6 @@
 <html ng-app="PlayerApp">
 	<head>
-		<title>Thirtify</title>
+		<title>PLAYING NOW</title>
         <link href='bower_components/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
@@ -40,7 +40,7 @@
 						<input type="text" ng-model="query" ng-change="loadsearch()" ng-keyup="loadsearch()" placeholder="Search..." />
 					</div>
 					<div class="titlebox">
-						<a href="#/home">SAMPLE PLAYER APPLICATION</a>
+						<a ng-click="next()"><img src="images/image-1.jpg" /></a>
 					</div>
 					<div class="userbox">
 						Signed in as <b><a href="#/users/{{profileUsername}}">{{profileUsername}}</a></b>
@@ -52,13 +52,13 @@
 						<div class="list scrollable">
 							<b><a href="#/">MAIN</a></b>
 							<ul class="menuitems">
-								<li><a href="#/" ng-class="getClass('/')">Browse</a></li>
+								<li><a href="#/" ng-class="getClass('/')">What' New</a></li>
 							</ul>
 							<b><a href="#/me">YOUR MUSIC</a></b>
 							<ul class="menuitems">
 								<li><a href="#/users/{{username}}/tracks" ng-class="getClass('/users/{{username}}/tracks')">Songs</a></li>
 							</ul>
-							<b><a href="#/me">PLAYLISTS</a></b>
+							<b><a href="#/me">TOP TEN PLAYLIST</a></b>
 							<ul class="menuitems">
 								<li ng-repeat="pl in playlists track by pl.id" ng-context-menu="menuOptions(pl)" ng-class="getClass('/users/{{pl.username}}/playlists/{{pl.id}}')">
 									<a href="#/users/{{pl.username}}/playlists/{{pl.id}}" ng-if="!pl.editing">
@@ -96,7 +96,7 @@
 						</div>
 
 						<div class="nextbutton">
-							<a ng-click="next()"><img src="images/btn-next.png" /></a>
+							
 						</div>
 
 						<div class="volume">
@@ -125,7 +125,7 @@
                 <div class="modal-dialog">
 
                 <!-- Modal content-->
-                <div class="modal-content">
+                <div class="">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Edit Player Details</h4>
@@ -151,8 +151,8 @@
                             </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-warning">Update</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Update</button>
                     </div>
                 </div>
 
@@ -164,9 +164,9 @@
 			<div ng-controller="LoginController">
 				<div class="centered">
 					<div class="inner">
-						<h1>Thirtify</h1>
+						<h1>PLAYING NOW</h1>
 						<p>
-							This demo explores the possibilities with the Web API. To view this demo you need to sign in with your spotify account.
+						To view this demo you need to sign in with your spotify account.
 						</p>
 						<a ng-click="login()" class="button big green">login</a>
 					</div>
