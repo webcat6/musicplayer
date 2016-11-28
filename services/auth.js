@@ -8,10 +8,12 @@
 		var REDIRECT_URI = '';
 
 		if (location.host == 'localhost:8000') {
-			CLIENT_ID =	'409f070cb44945d9a85e9b4ad8fa3bf1';
+
+
+			CLIENT_ID =	'fff4ea365dd442e0bea569ee80424d32';
 			REDIRECT_URI = 'http://localhost:8000/callback.html';
 		} else {
-			CLIENT_ID = '9714921402b84783b2a207f1b6e82612';
+			CLIENT_ID = 'fb02e072b5d04276b3c0a4ab6249bd18';
 			REDIRECT_URI = 'https://webcat68.github.io/musicplayer/#/';
 		}
 
