@@ -8,11 +8,11 @@
 		var REDIRECT_URI = '';
 
 		if (location.host == 'localhost:8000') {
-			CLIENT_ID =	'fffea365dd442e0bea569ee80424d32';
+			CLIENT_ID =	'409f070cb44945d9a85e9b4ad8fa3bf1';
 			REDIRECT_URI = 'http://localhost:8000/callback.html';
 		} else {
-			CLIENT_ID = 'fffea365dd442e0bea569ee80424d32';
-			REDIRECT_URI = 'https://webcat68.github.io/musicplayer/#/';
+			CLIENT_ID = '9714921402b84783b2a207f1b6e82612';
+			REDIRECT_URI = 'http://lab.possan.se/thirtify/callback.html';
 		}
 
 		function getLoginURL(scopes) {
