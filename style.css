@@ -9,6 +9,14 @@ body {
 	font-weight: 300;
 	overflow: hidden;
 }
+@media (max-width: 1890px) { 
+	.topgroup img{
+    width: 267%;
+    top: 0;
+    position: absolute;
+    left: 70px;
+}
+}
 
 div.scrollable {
 	overflow: auto;
@@ -90,9 +98,10 @@ hr {
 ul{
 list-style-type: none;
 }
+
 .topgroup img{
     width: 105%;
-    margin-top: -18%;
+    top: 0;
     position: absolute;
     left: 70px;
 }
