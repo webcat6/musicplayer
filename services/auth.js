@@ -8,12 +8,14 @@
 		var REDIRECT_URI = '';
 
 		if (location.host == 'localhost:8000') {
-			CLIENT_ID =	'409f070cb44945d9a85e9b4ad8fa3bf1';
+			CLIENT_ID =	'1b16e28620294bb6b0355cd307a3ec2b';
 			REDIRECT_URI = 'http://localhost:8000/callback.html';
 		} else {
 			CLIENT_ID = '9714921402b84783b2a207f1b6e82612';
 			REDIRECT_URI = 'https://webcat68.github.io/musicplayer/#/';
 		}
+
+
 
 		function getLoginURL(scopes) {
 			return 'https://accounts.spotify.com/authorize?client_id=' + CLIENT_ID
