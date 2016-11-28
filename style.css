@@ -80,7 +80,7 @@ hr {
     position: absolute;
     left: 0px;
     top: 0px;
-    height: 4%;
+    height: 50%;
     width: 100%;
     background-color: #222326;
     border-bottom: 1px solid #393b40;
@@ -91,8 +91,8 @@ ul{
 list-style-type: none;
 }
 .topgroup img{
-    width: 1381px;
-    margin-top: 2%;
+    width: 105%;
+    margin-top: -11%;
     margin-left: 77px;
 }
 
@@ -289,14 +289,14 @@ list-style-type: none;
 }
 
 .mainview {
-	position: absolute;
-	left: 220px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	padding: 20px;
-	overflow: auto;
-background-color: black;
+    position: absolute;
+    left: 220px;
+    top: 40%;
+    right: 0px;
+    bottom: 0px;
+    padding: 20px;
+    overflow: auto;
+    background-color: black;
 }
 
 .mainview a {

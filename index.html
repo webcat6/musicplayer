@@ -54,10 +54,11 @@
 							<ul class="menuitems">
 								<li><a href="#/" ng-class="getClass('/')">What' New</a></li>
 							</ul>
+							<!--
 							<b><a href="#/me">YOUR MUSIC</a></b>
 							<ul class="menuitems">
 								<li><a href="#/users/{{username}}/tracks" ng-class="getClass('/users/{{username}}/tracks')">Songs</a></li>
-							</ul>
+							</ul> -->
 							<b><a href="#/me">TOP TEN PLAYLIST</a></b>
 							<ul class="menuitems">
 								<li ng-repeat="pl in playlists track by pl.id" ng-context-menu="menuOptions(pl)" ng-class="getClass('/users/{{pl.username}}/playlists/{{pl.id}}')">
