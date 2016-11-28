@@ -13,7 +13,7 @@
 			CLIENT_ID =	'fff4ea365dd442e0bea569ee80424d32';
 			REDIRECT_URI = 'http://localhost:8000/callback.html';
 		} else {
-			CLIENT_ID = 'fb02e072b5d04276b3c0a4ab6249bd18';
+			CLIENT_ID = 'fff4ea365dd442e0bea569ee80424d32';
 			REDIRECT_URI = 'https://webcat68.github.io/musicplayer/#/';
 		}
 
